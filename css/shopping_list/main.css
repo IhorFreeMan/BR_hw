@@ -1,0 +1,112 @@
+@import url('./normalize.css');
+
+
+
+.body {
+  font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+  background: #2e2e2e;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* border: 4px solid #fff;  */
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header {
+  background: #7a7878;
+  padding: 20px 40px;
+  border-radius: 8px;
+  
+  /* text-align: center; */
+  width: 100%;
+  border: 2px solid #666;
+  transition: border-color 0.3s ease;
+}
+
+header:hover {
+    border: 2px solid #fff; 
+
+}
+
+.main {
+  margin-top: 15px;
+  
+}
+
+.main-ul {
+  padding: 20px 40px;
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+
+
+.main-ul-li {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 10px;
+  /* margin: 0 15px; */
+  display: flex;
+  align-items: center;
+}
+
+
+
+.main-ul-li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.main-ul-li:active {
+  background: red;
+}
+
+/* будут применены, если хотя бы один из относительных 
+селекторов, переданных в качестве аргумента, 
+соответствует хотя бы одному элементу */
+
+.main-ul-li label:has(input[type="checkbox"]:checked) {
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+.header-name {
+  margin-top: 40px;
+  margin-bottom: 8px;    
+  color: #ff6666;
+}
+
+.subtitle {
+  color: #ff6666;
+  margin-bottom: 30px;
+}
+
+
+/* Кнопка */
+.btn {
+    display: block;
+    margin: 25px auto;
+    padding: 15px 147px;
+    background: #444;
+    color: #ff6666;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #555;
+}
