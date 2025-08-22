@@ -1,0 +1,194 @@
+@import url('./normalize.css');
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+
+    max-width: 1200px;
+    /* обмежує ширину */
+    width: 100%;
+    /* займає всю ширину доступного місця */
+    margin: 0 auto;
+    /* центрує */
+    padding: 0 20px;
+    /* відступи зліва і справа */
+
+}
+
+
+.header {
+    padding: 20px 0;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 124px;
+    padding-right: 124px;
+}
+
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.menu a:hover {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #f0b943;
+
+}
+
+
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+
+}
+
+
+.btn:hover {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f0b943;
+    border: 1px solid #f0b943;
+    color: #fff;
+
+}
+
+
+.hero {
+    padding: 60px 121px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-image {
+    background: linear-gradient(135deg, #fff6e5 0%, #ffe6cc 100%);
+    border-radius: 1908px 1921px 971px 1800px;
+    /* padding: 20px; */
+}
+
+.benefits {
+    text-align: center;
+    background: linear-gradient(180deg,
+            #fff6e533 0%,
+            /* 33 = прозорість ≈ 20% */
+            #ffe6ccff 100%
+            /* ff = повна непрозорість */
+        );
+    padding: 60px 0;
+    border-radius: 0px 0px 900px 900px;
+    margin-bottom: 72px;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    height: 267px;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: left;
+}
+
+
+
+.man-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.manager-grid {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.manager-list {
+    list-style: none;
+    
+}
+
+.marketers-grid {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.footer-block .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* flex-wrap: wrap; дозволяє елементам у flex-контейнері 
+    переноситися на наступний рядок, коли в поточному рядку більше немає місця */
+    margin-bottom: 20px;
+    
+
+}
+
+
+.footer-column {
+    line-height: 1.4;
+    
+}
+
+.footer-links-list {
+    list-style: none;
+    padding-left: 0;
+
+
+}
+
+.footer-links-list a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+
+}
+
+.footer-links-list a:hover {
+    text-decoration: none;
+    font-weight: 500;
+    color: #f0b943;
+}
+
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.signup-input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
