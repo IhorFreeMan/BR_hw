@@ -1,0 +1,21 @@
+.my-margin {
+    margin-bottom: 30px;
+}
+
+.object-line {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.castom_pading {
+    padding-top: 30px;
+}
+
+.my-video {
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+
+}
