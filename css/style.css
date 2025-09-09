@@ -1,0 +1,209 @@
+@import url('./normalize.css');
+@import url('./fonts.css');
+@import url('./vars.css');
+
+
+
+body {
+    font-size: var(--main-font-size);
+    font-family: var(--main-font-family);
+    background: var(--main-background);
+    color: var(--main-font-color);
+}
+
+.container {
+    max-width: 100%;
+    width: 970px;
+    margin: 0 auto;
+    padding-bottom: 39px;
+}
+
+
+.nav {
+    border-bottom: 1px solid #828282;
+    padding: 28px 34px;
+    
+
+}
+
+
+    
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 155px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #828282;
+    transition: all 0.3s;
+    display: block;
+    white-space: nowrap; /* завжди буде в одну лінію */
+}
+
+.menu__link:hover {
+    color: #070707;
+    font-family: var(--title-font-family);
+}
+
+.title {
+    margin: 0px 0 39px;
+    font-family: var(--title-font-family);
+}
+
+.section_title {
+    margin: 0 0 20px;
+}
+
+.about__me {
+    background-color: #F6F6F6;
+    padding: 60px 0;
+    /* відступи зверху і знизу */
+    text-align: center;
+    /* центруємо текст */
+
+}
+
+.section_title {
+    /* padding-bottom: 50px; */
+    font-size: 28px;
+    margin-bottom: 20px;
+    /* на заголовку дає відстань до першого абзацу */
+    font-family: var(--title-font-family);
+}
+
+.section_title p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.5;
+    /* робить текст більш читабельним. */
+}
+
+
+.skills {
+    width: 100%;
+    background-color: white;
+    padding: 60px 0;
+}
+
+.skills h2 {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+}
+
+.skills p {
+    text-align: center;
+    /* padding-top: 10px;*/
+    padding-bottom: 10px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    /* вирівняти елементи по головній осі */
+}
+
+
+
+/* Рейтинг (зірки)*/
+.rating {
+    font-size: 20px;
+    color: #000;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 105px;
+}
+
+.lang {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 23px;
+    display: flex;
+    writing-mode: sideways-lr;
+    /* вертикальний режим письма */
+    gap: 8px;
+}
+
+.language:hover {
+    color: #070707;
+    font-family: var(--title-font-family);
+}
+
+
+.block_black {
+    background-color: #F6F6F6;
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+
+
+.underline {
+    text-decoration: underline;
+}
+
+
+
+.skill {
+    transition: opacity 0.3s ease; /* плавність */
+}
+
+.skill:hover {
+    opacity: 0.5; /* прозорість при наведенні */
+}
+
+
+
+
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 22px;
+    background: black;
+    border: 1px solid black;
+    color: #fff;
+}
+
+
+.btn:hover {
+    padding: 10px 20px;
+    border-radius: 22px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.social {
+    display: flex;
+    gap: 53px;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+}
+
+
+.social__linc:hover {
+    opacity: 0.5; /* прозорість при наведенні */
+}
+
+.text__footer{
+    font-size: 14px;
+    font-family: var(--footer-font-family);
+}
+
+
