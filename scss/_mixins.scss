@@ -1,0 +1,21 @@
+@use 'vars' as v;
+
+@mixin container {
+  width: min(100% - 2 * #{v.$gutter}, #{v.$container-max});
+  margin-inline: auto;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == md {
+    @media (max-width: #{v.$bp-md}) { @content; }
+  } @else if $breakpoint == sm {
+    @media (max-width: #{v.$bp-sm}) { @content; }
+  } @else if $breakpoint == xs {
+    @media (max-width: #{v.$bp-xs}) { @content; }
+  }
+}
+
+@mixin focus-ring {
+  outline: 2px solid rgba(v.$color-accent, 0.35);
+  outline-offset: 2px;
+}
