@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../assets/fonts/Gilroy/Gilroy-Medium.woff2") format("woff2"), url("../assets/fonts/Gilroy/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"), url("../assets/fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("../assets/fonts/Gilroy/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: local("Gilroy-Light"), url("../assets/fonts/Gilroy/Gilroy-Light.woff2") format("woff2"), url("../assets/fonts/Gilroy/Gilroy-Light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  font-size: 18px;
+  font-family: "Gilroy-Medium", sans-serif;
+  background: #FFF;
+  color: #070707;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.nav {
+  border-bottom: 1px solid #828282;
+  padding: 28px 34px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.menu__link {
+  text-decoration: none;
+  color: #828282;
+  transition: all 0.3s;
+  display: block;
+  white-space: nowrap;
+}
+.menu__link:hover {
+  color: #070707;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0px 0 39px;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.section_title {
+  margin: 0 0 20px;
+}
+
+.about__me {
+  background-color: #F6F6F6;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section_title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.section_title p {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.skills {
+  width: 100%;
+  background-color: white;
+  padding: 60px 0;
+}
+.skills h2 {
+  font-size: 28px;
+  text-align: center;
+  padding-top: 10px;
+}
+.skills h2 p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Рейтинг (зірки)*/
+.rating {
+  font-size: 20px;
+  color: #000;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.lang {
+  list-style: none;
+  margin: 0;
+  padding-bottom: 23px;
+  display: flex;
+  writing-mode: sideways-lr;
+  /* вертикальний режим письма */
+  gap: 8px;
+}
+
+.language:hover {
+  color: #070707;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.block_black {
+  background-color: #F6F6F6;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.skill {
+  transition: opacity 0.3s ease;
+  /* плавність */
+}
+.skill:hover {
+  opacity: 0.5;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 22px;
+  background: black;
+  border: 1px solid black;
+  color: #fff;
+}
+.btn:hover {
+  padding: 10px 20px;
+  border-radius: 22px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.social {
+  display: flex;
+  gap: 53px;
+  list-style: none;
+  padding-left: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social__linc:hover {
+  opacity: 0.5;
+  /* прозорість при наведенні */
+}
+
+.text__footer {
+  font-size: 14px;
+  font-family: "Gilroy-Light", sans-serif;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    gap: 145px;
+  }
+}
+/* Планшети */
+@media screen and (min-width: 1024px) and (max-width: 768px) {
+  .menu {
+    gap: 60px;
+  }
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 20px;
+    justify-items: center;
+  }
+}
+/* Планшети */
+@media screen and (min-width: 55px) and (max-width: 689px) {
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 20px;
+    justify-items: center; /* центрує контент в кожній клітинці */
+  }
+}
+/* Телефони — 1 колонка */
+@media (max-width: 429px) {
+  .menu {
+    flex-direction: column; /* ставимо в колонку */
+    align-items: center;
+    gap: 10px;
+  }
+  .social {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .description {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .lang {
+    flex-direction: row;
+    writing-mode: horizontal-tb; /* стандартний горизонтальний текст */
+    gap: 10px;
+    padding-bottom: 0;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=main.css.map */
