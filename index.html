@@ -52,22 +52,27 @@
         </div>
 
     </header>
-
-    <main class="main">
-
-
-
-        <div class="image-card container">
-            <img src="./assets/img/lo-image.png" alt="like" class="main_icon">
+        <div class="image-card">
+            <!-- <img src="./assets/img/lo-image.png" alt="like" class="main_icon"> -->
+            <img src="./assets/img/bg-image.png" alt="like" class="main_icon_bg">
+            <img src="./assets/img/s-image.png" alt="like" class="main_icon_s">
+            <img src="./assets/img/m-image.png" alt="like" class="main_icon_m">
             <div class="image__card__caption">
                 MANIFEST — newborn theme. <br>Clean, simple and fast.
             </div>
         </div>
+    <main class="main">
+
+
+
+
 
         <section class="one container">
             <h2 class="title2">Blog</h2>
             <div class="one__card">
-                <img src="./assets/img/min-s.png" alt="Arrow image" class="one__card__image">
+                <img src="./assets/img/min-m.png" alt="Arrow image" class="one_image_m">
+                <img src="./assets/img/image_sss.png" alt="Arrow image" class="one_image_s">
+                <img src="./assets/img/min__bg.png" alt="Arrow image" class="one_image_bg">
                 <div class="one__card__content">
                     <p class="one-card__category">Technology, Interface Design</p>
                     <h3 class="one-card__heading">Using UX Design to Build a Sustainable Future</h3>
@@ -79,8 +84,10 @@
                 </div>
             </div>
 
-            <div class="one__card">
-                <img src="./assets/img/min_s_2.png" alt="Building image" class="one__card__image">
+            <div class="one__card card-reverse">
+                <img src="./assets/img/min-m2.png" alt="Building image" class="one_image_m">
+                <img src="./assets/img/min__s2.png" alt="Building image" class="one_image_s">
+                <img src="./assets/img/min__bg2.png" alt="Building image" class="one_image_bg">
                 <div class="one__card__content">
                     <p class="one__card__category">Technology, Interface Design</p>
                     <h3 class="one__card__heading">Using UX Design to Build a Sustainable Future</h3>
@@ -95,22 +102,23 @@
 
 
         <section class="two container">
-            <h2 class="two__title">Latest Posts</h2>
+            <h2 class="title2">Latest Posts</h2>
+            <div class="two-list">
             <div class="two__card">
                 <img src="./assets/img/min_lampa.png" alt="Arrow image" class="two__card__image">
-                <div class="two__card__content">
-                    <p class="two__card__category">Interface Design</p>
-                    <h3 class="two__card__heading">UX traffic light colours</h3>
-                    <p class="two__card__date">8 June, 2020</p>
-                    <p class="two__card__text">
+                <div class="one__card__content">
+                    <p class="one__card__category">Interface Design</p>
+                    <h3 class="one__card__heading">UX traffic light colours</h3>
+                    <p class="one__card__date">8 June, 2020</p>
+                    <p class="one__card__text">
                         UI has to make a huge visual difference between warning, an alert and a success.
                     </p>
                 </div>
             </div>
 
-            <div class="two__card">
+            <div class="two__card card-reverse">
                 <img src="./assets/img/min-s.png" alt="Arrow image" class="two__card__image">
-                <div class="two__card__content">
+                <div class="one__card__content">
                     <p class="two__card__category">Technology</p>
                     <h3 class="two__card__heading">Using UX Design to Build a Sustainable Future</h3>
                     <p class="two__card__date">6 May, 2020</p>
@@ -121,7 +129,7 @@
             </div>
             <div class="two__card">
                 <img src="./assets/img/min__ruf.png" alt="Arrow image" class="two__card__image">
-                <div class="two__card__content">
+                <div class="one__card__content">
                     <p class="two__card__category">Visual Design</p>
                     <h3 class="two__card__heading">Creativity vs. UX</h3>
                     <p class="two__card__date">8 June, 2020</p>
@@ -130,12 +138,14 @@
                     </p>
                 </div>
             </div>
+            </div>
         </section>
 
 
 
         <section class="three container">
             <h2 class="title2">The Most Popular</h2>
+            <div class="three__grid">
             <div class="three__card">
                 <img src="./assets/img/three_s_one.png" alt="Arrow image" class="three__card__image">
                 <div class="three__card__content">
@@ -161,9 +171,14 @@
                     </p>
                 </div>
             </div>
-            <button type="submit" class="btn">Load More</button>
+            </div>
+            
         </section>
 
+        <div class="container dtn__position">
+            <button type="submit" class="btn">Load More</button>
+        </div>
+        
 
 
 

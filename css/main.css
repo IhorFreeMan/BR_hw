@@ -195,13 +195,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 15px;
+    padding: 0 3px;
   }
-}
-
-.main_icon {
-  display: flex;
-  align-items: center;
 }
 
 .btn {
@@ -235,20 +230,242 @@ body {
 
 .image-card {
   position: relative;
-  display: grid; /* щоб легко центрувати або вирівнювати контент */
+  display: flex;
+  /* Це вже добре, але... */
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; - для одного зображення не критично, але можна залишити */
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main_icon {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.main_icon_bg {
+  display: none;
+}
+@media screen and (min-width: 1140px) {
+  .main_icon_bg {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.main_icon_s {
+  display: none;
+}
+@media screen and (min-width: 301px) and (max-width: 1139px) {
+  .main_icon_s {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.main_icon_m {
+  display: none;
+}
+@media screen and (max-width: 300px) {
+  .main_icon_m {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .image__card__caption {
   position: absolute;
-  left: 21px;
-  top: 146px;
+  left: 2%;
+  /* Приблизно 21px від 970px */
+  top: 15%;
+  /* Приблизно 146px від 970px */
   padding: 0.75rem 1rem;
   color: #000000;
   display: flex;
   font-weight: 600;
-  font-size: clamp(1rem, 2.5vw, 1.875rem); /* адаптивний розмір */
+  font-size: clamp(1rem, 2.5vw, 1.875rem);
+  /* адаптивний розмір */
 }
 
-.main_icon {
+.main {
+  max-width: 1172px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.one_image_m {
+  display: none;
+}
+@media screen and (max-width: 300px) {
+  .one_image_m {
+    display: block;
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.one_image_s {
+  display: none;
+}
+@media screen and (min-width: 301px) and (max-width: 1139px) {
+  .one_image_s {
+    display: block;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.one_image_bg {
+  display: none;
+}
+@media screen and (min-width: 1140px) {
+  .one_image_bg {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.one__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: clamp(1.5rem, 5vw, 3.5rem);
+  position: relative;
+}
+@media screen and (max-width: 634px) {
+  .one__card {
+    flex-direction: column;
+  }
+}
+
+.one__card.card-reverse {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 634px) {
+  .one__card.card-reverse {
+    flex-direction: column;
+  }
+}
+
+.one__card img {
+  width: 79%;
+  height: auto;
+}
+
+.one__card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.one-card__category {
+  font-size: 0.875rem;
+  font-weight: 700;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+.one-card__heading {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.one-card__date {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+.one-card__text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Latest Posts Section */
+.two-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(10px, 2vw, 30px);
+}
+
+@media (max-width: 993px) {
+  .two-list {
+    grid-template-columns: 1fr;
+  }
+  .two__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(5px, 1vw, 20px);
+  }
+  .card-reverse {
+    flex-direction: row-reverse;
+  }
+  .two__card__image {
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media (max-width: 634px) {
+  .two-list {
+    grid-template-columns: 1fr;
+  }
+  .two__card {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(5px, 1vw, 20px);
+  }
+  .card-reverse {
+    flex-direction: column;
+  }
+  .two__card__image {
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+}
+.three__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(10px, 2vw, 30px);
+}
+
+.three__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.three__card__image {
+  display: block;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+}
+
+@media (max-width: 320px) {
+  .three__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: clamp(10px, 2vw, 30px);
+  }
 }/*# sourceMappingURL=main.css.map */
