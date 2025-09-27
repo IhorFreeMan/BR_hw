@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: 
+        url('../assets/fonts/monsterrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../assets/fonts/monsterrat/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src:
+        url('../assets/fonts/monsterrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../assets/fonts/monsterrat/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src:
+        url('../assets/fonts/monsterrat/Montserrat-Light.woff2') format('woff2'),
+        url('../assets/fonts/monsterrat/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src:
+        url('../assets/fonts/work_sans/WorkSans-Bold.woff2') format('woff2'),
+        url('../assets/fonts/work_sans/WorkSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: 
+        url('../assets/fonts/work_sans/WorkSans-Regular.woff2') format('woff2'),
+        url('../assets/fonts/work_sans/WorkSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

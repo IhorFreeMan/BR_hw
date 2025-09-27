@@ -1,0 +1,61 @@
+@use "vars" as v;
+
+// // Міксин для медіа-запитів
+// @mixin respond($breakpoint) {
+//   @if $breakpoint == "xl" {
+//     @media (max-width: 1200px) { @content; }
+//   }
+//   @else if $breakpoint == "lg" {
+//     @media (max-width: 1000px) { @content; }
+//   }
+//   @else if $breakpoint == "md" {
+//     @media (max-width: 900px) { @content; }
+//   }
+//   @else if $breakpoint == "sm" {
+//     @media (max-width: 700px) { @content; }
+//   }
+//   @else if $breakpoint == "xs" {
+//     @media (max-width: 600px) { @content; }
+//   }
+//   @else if $breakpoint == "xxs" {
+//     @media (max-width: 500px) { @content; }
+//   }
+// }
+
+// Міксин для центрування flex
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Міксин для центрування grid
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
+
+// Міксин для тексту по центру
+@mixin text-center {
+  text-align: center;
+}
+
+// Міксин для базової кнопки
+@mixin btn-base {
+  display: inline-block;
+  border-radius: 50px;
+  font-family: v.$menu-font-family;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+// Міксин для базової картки
+@mixin card-base {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px 0 rgba(156, 105, 226, 0.08);
+}
