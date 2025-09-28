@@ -38,31 +38,104 @@
   }
 }
 
+.burger-toggle {
+  display: none;
+}
 
-@media (max-width: 700px) {
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 16px 0;
+.burger__img {
+  display: none;
+  cursor: pointer;
+
+  @media screen and (max-width: 700px) {
+    display: inline-block;
+    position: relative;
+    width: 34px;
+    height: 2px;
+    background-color: v.$colors-violet;
+    vertical-align: middle;
+    transition: all 0.35s;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: v.$colors-violet;
+      transition: all 0.35s;
+    }
+    &::before {
+      top: -10px;
+    }
+    &::after {
+      top: 10px;
+    }
   }
 }
 
-.btn:focus,
-.btn:hover {
-  outline: none;
-  box-shadow: 0 0 0 2px v.$colors-violet-middle;
+// Анімація бургеру при відкритті меню
+.burger-toggle:checked + .burger__img {
+  transform: rotate(405deg);
+
+  &::before {
+    opacity: 0;
+  }
+  &::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
 }
 
-.footer-links a:hover,
-.footer-links a:focus {
-  color: v.$colors-violet-middle;
+// Меню для мобільних
+@media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    gap: 24px;
+    padding: 32px 0;
+    box-shadow: 0 8px 32px 0 rgba(76, 68, 182, 0.08);
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .burger-toggle:checked ~ .menu {
+    display: flex;
+    opacity: 1;
+  }
 }
 
-.icon:focus,
-.icon:hover {
-  opacity: 0.7;
-}
+
+
+// @media (max-width: 700px) {
+//   .menu {
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 20px;
+//     padding: 16px 0;
+//   }
+// }
+
+// .btn:focus,
+// .btn:hover {
+//   outline: none;
+//   box-shadow: 0 0 0 2px v.$colors-violet-middle;
+// }
+
+// .footer-links a:hover,
+// .footer-links a:focus {
+//   color: v.$colors-violet-middle;
+// }
+
+// .icon:focus,
+// .icon:hover {
+//   opacity: 0.7;
+// }
 
 
 .btn {
@@ -430,7 +503,7 @@
   min-height: 320px;
   position: relative;
   transition: box-shadow 0.3s;
-  max-width: 400px;
+  max-width: 384px;
   max-height: 400px;
 
 
@@ -474,10 +547,10 @@
   }
 
   .feature__img {
-    max-width: 183px;
+    max-width: 171px;
     height: auto;
     position: absolute;
-    right: 438px;
+    right: 411px;
 
     z-index: 1;
 
@@ -922,7 +995,7 @@
     }
 
     .site-footer__bottom {
-      padding-left: 0;
+      padding-left: 10px;
       margin-top: 16px;
       font-size: 13px;
     }
