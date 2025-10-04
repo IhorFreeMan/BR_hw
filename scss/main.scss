@@ -374,7 +374,8 @@
     }
 
     &__content {
-      width: 100%;
+      // width: 100%;
+      width: 400px;
 
       h2 {
         font-size: 24px;
@@ -670,7 +671,7 @@
 
 @media (max-width: 900px) {
   .testimonial-card {
-    max-width: 100%;
+    // max-width: 100%;
     min-width: 0;
     padding: 24px 16px;
     gap: 16px;
